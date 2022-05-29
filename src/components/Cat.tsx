@@ -13,8 +13,8 @@ const Cat: React.FC<ICat> = ({ id, url }) => {
     isFavorite === false
       ? (localStorage.setItem(id, url), setIsFavorite(true))
       : (localStorage.removeItem(id),
-        window.dispatchEvent(new Event("storage")),
-        setIsFavorite(false)); ///так как событие вызывается только при изменении localStorage на другой странице, вызываем его самостоятельно. Иначе страница с любимыми котиками не будет обновлять свое состояние
+        window.dispatchEvent(new Event("storage")), ///так как событие вызывается только при изменении localStorage на другой странице, вызываем его самостоятельно. Иначе страница с любимыми котиками не будет обновлять свое состояние
+        setIsFavorite(false));
   }
   return (
     <div className="image-wrap">
