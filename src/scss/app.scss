@@ -10,9 +10,7 @@
 .image-wrap {
   width: 225px;
   height: 225px;
-  @media only screen and (max-width: 480px) {
-    width: 70%;
-  }
+
   margin: 24px;
   position: relative;
   z-index: 1;
@@ -23,13 +21,6 @@
     .heart,
     .heart-white {
       display: inline-block;
-      // &:after,
-      // &:before {
-      //     content: "";
-
-      //     position: absolute;
-
-      // }
     }
   }
 }

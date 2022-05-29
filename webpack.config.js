@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const miniCss = require("mini-css-extract-plugin");
-const MediaQueryPlugin = require("media-query-plugin");
+
 module.exports = {
   entry: "./src/index.tsx",
 
@@ -14,25 +14,29 @@ module.exports = {
       {
         test: /\.(s*)css$/,
         use: [
-          miniCss.loader,
-          "css-loader",
-          MediaQueryPlugin.loader,
-          "postcss-loader",
-          "sass-loader",
+          { loader: miniCss.loader },
+          { loader: "css-loader" },
+          { loader: "postcss-loader" },
+          { loader: "resolve-url-loader" },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
       },
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
       },
-      { test: /\.svg$/, use: "svg-inline-loader" },
     ],
   },
 
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "index_bundle.js",
-    publicPath: "/",
+    publicPath: "./",
   },
   plugins: [
     new HtmlWebpackPlugin({

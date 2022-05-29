@@ -2,12 +2,13 @@
     "compilerOptions": {
         "target": "es5",
         "jsx": "react",
+        "sourceMap": true,
         "noEmitOnError": true,
         "noUnusedLocals": true,
         "removeComments": true,
         "noImplicitAny": true,
         "esModuleInterop": true,
-        "baseUrl": "./",
+        "baseUrl": "./cats/",
 
     },
     "exclude": [
