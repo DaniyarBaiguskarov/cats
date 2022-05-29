@@ -11,6 +11,7 @@
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://daniyarbaiguskarov.github.io/cats/",
   "dependencies": {
     "axios": "^0.27.2",
     "gh-pages": "^4.0.0",
