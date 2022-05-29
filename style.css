@@ -36,7 +36,7 @@
 .heart {
   display: none;
   position: absolute;
-  background-image: url(/dc82fbb34c213a07fe83.svg);
+  background-image: url(./dc82fbb34c213a07fe83.svg);
   z-index: 1;
   bottom: 28.3px;
   right: 21px;
@@ -46,14 +46,14 @@
 .heart-white {
   display: none;
   position: absolute;
-  background-image: url(/6dc5831bae7b4fd794b2.svg);
+  background-image: url(./6dc5831bae7b4fd794b2.svg);
   z-index: 1;
   bottom: 28.3px;
   right: 21px;
   width: 40px;
   height: 37px; }
   .heart-white:hover {
-    background-image: url(/dc82fbb34c213a07fe83.svg); }
+    background-image: url(./dc82fbb34c213a07fe83.svg); }
 
 .header {
   width: 100%;
